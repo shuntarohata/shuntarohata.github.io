@@ -25,11 +25,11 @@ test
 
 <script type="text/javascript">
   //地図の中心地を定義
-  var mymap = L.map('mapid').setView([37.85, 138.8], 9);
-
+  //var mymap = L.map('mapid').setView([37.85, 138.8], 9);
+  var mymap = L.map('mapid').setView([-69.0, 39.6], 9);
   //タイルレイヤーを取得
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',　crs: L.CRS.EPSG4326,
+    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',　crs: L.CRS.EPSG3031,
     maxZoom: 18}).addTo(mymap);
 
 

@@ -29,7 +29,8 @@ test
 
   //タイルレイヤーを取得
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
+    attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',　crs: L.CRS.EPSG4326,
     maxZoom: 18}).addTo(mymap);
+
 
 </script>
